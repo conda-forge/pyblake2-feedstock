@@ -1,5 +1,5 @@
-{% set version = '1.1.0' %}
-{% set sha256 = '3a850036bf42053c74bfc52c063323ca78e40ba1f326b01777da5750a143631a' %}
+{% set version = "1.1.1" %}
+{% set sha256 = '8ec8e9087d13c99b354ab6d8b4cadb1758633db5946ff95a6bc7ac538b6d7b3d' %}
 {% set name = 'pyblake2' %}
 
 package:
