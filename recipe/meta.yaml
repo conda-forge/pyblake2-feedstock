@@ -30,8 +30,6 @@ test:
   imports:
     - pyblake2
   commands:
-    - conda inspect linkages {{ name|lower }}  # [unix]
-    - conda inspect objects {{ name|lower }}   # [osx]
 
 
 about:
