@@ -9,16 +9,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
 build:
-  number: 1004
+  number: 1005
   script:
     - python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - msinttypes  # [win and py<35]
